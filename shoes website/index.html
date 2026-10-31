@@ -1,0 +1,386 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luna Shoes | Women's Footwear</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <nav class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+      <a href="#home" class="logo">LUNA<span>.</span></a>
+
+      <div class="hidden md:flex gap-8">
+        <a href="#home">Home</a>
+        <a href="#collection">Collection</a>
+        <a href="#about">Our Story</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <a href="#bag" class="bag-link">
+        Bag (<span id="cart-count">0</span>)
+      </a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="max-w-7xl mx-auto px-6 py-14 md:py-20 grid md:grid-cols-2 gap-12 items-center">
+      <div class="hero-text">
+        <p class="eyebrow">A LITTLE EXTRA SPARKLE</p>
+
+        <h1>
+          Walk with<br>
+          <span>Confidence.</span>
+        </h1>
+
+        <p class="description">
+          From pretty everyday flats to elegant heels,
+          discover shoes that make every outfit feel special.
+          Your style, your moment, your Luna.
+        </p>
+
+        <a href="#collection" class="pink-btn inline-block mt-7">
+          Explore Collection ↗
+        </a>
+
+        <div class="hero-note">
+          <span>✦</span>
+          Made for every beautiful occasion.
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <img
+          src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=1000&q=85"
+          alt="Elegant women's heels"
+        >
+        <div class="image-label">
+          <span>THE NEW EDIT</span>
+          <strong>Pretty in Every Step.</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories -->
+  <section class="categories max-w-7xl mx-auto px-6 py-12">
+    <p class="eyebrow text-center">FIND YOUR STYLE</p>
+    <h2 class="section-title text-center">Made for Her.</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-5 mt-9">
+      <a href="#collection" class="category-card">
+        <img
+          src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=600&q=80"
+          alt="Women's heels"
+        >
+        <span>Elegant Heels ↗</span>
+      </a>
+
+      <a href="#collection" class="category-card">
+        <img
+          src="https://images.unsplash.com/photo-1460353581641-37baddab0fa2?auto=format&fit=crop&w=600&q=80"
+          alt="Women's sneakers"
+        >
+        <span>Everyday Sneakers ↗</span>
+      </a>
+
+      <a href="#collection" class="category-card">
+        <img
+          src="https://images.unsplash.com/photo-1515347619252-60a4bf4fff4f?auto=format&fit=crop&w=600&q=80"
+          alt="Women's fashion footwear"
+        >
+        <span>Chic Flats ↗</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section id="collection" class="max-w-7xl mx-auto px-6 py-16">
+    <div class="flex flex-col sm:flex-row justify-between sm:items-end gap-4 mb-9">
+      <div>
+        <p class="eyebrow">YOUR NEXT FAVORITE PAIR</p>
+        <h2 class="section-title">The Shoe Edit<span>.</span></h2>
+      </div>
+      <p class="text-sm text-gray-500">Six styles. Endless possibilities.</p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7">
+
+      <article class="product-card">
+        <div class="product-image">
+          <span class="tag">BESTSELLER</span>
+          <img
+            src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=700&q=80"
+            alt="Elegant women's heels"
+            loading="lazy"
+          >
+        </div>
+        <div class="product-info">
+          <p class="category-label">PARTY WEAR</p>
+          <h3>Blush Elegance</h3>
+          <div class="product-bottom">
+            <strong>Rs. 3,499</strong>
+            <button class="add-btn" data-name="Blush Elegance" data-price="3499">Add +</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="product-image">
+          <span class="tag">NEW</span>
+          <img
+            src="https://images.unsplash.com/photo-1495555961986-6d4c1ecb7be3?auto=format&fit=crop&w=700&q=80"
+            alt="Casual women's shoes"
+            loading="lazy"
+          >
+        </div>
+        <div class="product-info">
+          <p class="category-label">EVERYDAY</p>
+          <h3>City Girl</h3>
+          <div class="product-bottom">
+            <strong>Rs. 2,499</strong>
+            <button class="add-btn" data-name="City Girl" data-price="2499">Add +</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="product-image">
+          <img
+            src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=700&q=80"
+            alt="Fashion sneakers"
+            loading="lazy"
+          >
+        </div>
+        <div class="product-info">
+          <p class="category-label">SNEAKERS</p>
+          <h3>Pink Energy</h3>
+          <div class="product-bottom">
+            <strong>Rs. 3,199</strong>
+            <button class="add-btn" data-name="Pink Energy" data-price="3199">Add +</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="product-image">
+          <img
+            src="https://images.unsplash.com/photo-1515347619252-60a4bf4fff4f?auto=format&fit=crop&w=700&q=80"
+            alt="Women's flats"
+            loading="lazy"
+          >
+        </div>
+        <div class="product-info">
+          <p class="category-label">CASUAL CHIC</p>
+          <h3>Soft Steps</h3>
+          <div class="product-bottom">
+            <strong>Rs. 1,999</strong>
+            <button class="add-btn" data-name="Soft Steps" data-price="1999">Add +</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="product-image">
+          <span class="tag">FAVORITE</span>
+          <img
+            src="https://images.unsplash.com/photo-1560343090-f0409e92791a?auto=format&fit=crop&w=700&q=80"
+            alt="Women's stylish shoes"
+            loading="lazy"
+          >
+        </div>
+        <div class="product-info">
+          <p class="category-label">CLASSIC STYLE</p>
+          <h3>Golden Hour</h3>
+          <div class="product-bottom">
+            <strong>Rs. 3,799</strong>
+            <button class="add-btn" data-name="Golden Hour" data-price="3799">Add +</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="product-image">
+          <img
+            src="https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=700&q=80"
+            alt="Modern casual sneakers"
+            loading="lazy"
+          >
+        </div>
+        <div class="product-info">
+          <p class="category-label">STREET STYLE</p>
+          <h3>Weekend Mood</h3>
+          <div class="product-bottom">
+            <strong>Rs. 2,899</strong>
+            <button class="add-btn" data-name="Weekend Mood" data-price="2899">Add +</button>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Shopping Bag -->
+  <section id="bag" class="max-w-7xl mx-auto px-6 py-10">
+    <div class="bag-panel">
+      <p class="eyebrow">YOUR PICKS</p>
+      <h2 class="section-title">Your Shopping Bag<span>.</span></h2>
+
+      <div id="cart-list" class="mt-5">
+        <p class="text-gray-500">Your bag is waiting for something pretty!</p>
+      </div>
+
+      <div class="total-row">
+        <strong>Subtotal</strong>
+        <strong id="cart-total">Rs. 0</strong>
+      </div>
+
+      <div class="flex flex-wrap gap-3 mt-6">
+        <button id="clear-cart" class="outline-btn">Clear Bag</button>
+        <button id="checkout" class="pink-btn">Checkout ↗</button>
+      </div>
+
+      <p id="cart-message" class="text-sm mt-4" aria-live="polite"></p>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about-section px-6 py-20 text-center">
+    <p class="eyebrow">THE LUNA PROMISE</p>
+    <h2 class="section-title">Your Style, Your Story.</h2>
+    <p class="about-text">
+      We believe the right shoes are more than an accessory.
+      They are a little expression of who you are.
+      Find your favorite pair and make every step your own.
+    </p>
+    <a href="#collection" class="pink-btn inline-block mt-7">Shop Your Favorites</a>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="text-center px-6 py-16">
+    <p class="eyebrow">LET'S TALK SHOES</p>
+    <h2 class="section-title">Say Hello, Gorgeous.</h2>
+    <p class="text-gray-500 mt-3">Have a question about a pair?</p>
+    <a href="mailto:hello@example.com" class="pink-btn inline-block mt-6">Contact Us ↗</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer px-6 py-8 text-center">
+    <a href="#home" class="logo">LUNA<span>.</span></a>
+    <p class="mt-3">A little sparkle in every step.</p>
+    <p class="text-xs mt-5">© 2026 Luna Shoes. Demo store.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    const cart = [];
+    const cartCount = document.getElementById("cart-count");
+    const cartList = document.getElementById("cart-list");
+    const cartTotal = document.getElementById("cart-total");
+    const cartMessage = document.getElementById("cart-message");
+
+    const money = value => "Rs. " + value.toLocaleString("en-PK");
+
+    function renderCart() {
+      const count = cart.reduce((sum, item) => sum + item.qty, 0);
+      const total = cart.reduce((sum, item) => sum + item.price * item.qty, 0);
+
+      cartCount.textContent = count;
+      cartTotal.textContent = money(total);
+      cartList.innerHTML = "";
+
+      if (cart.length === 0) {
+        const empty = document.createElement("p");
+        empty.className = "text-gray-500";
+        empty.textContent = "Your bag is waiting for something pretty!";
+        cartList.appendChild(empty);
+        return;
+      }
+
+      cart.forEach(item => {
+        const row = document.createElement("div");
+        row.className = "cart-row";
+
+        const details = document.createElement("div");
+        const name = document.createElement("strong");
+        name.textContent = item.name;
+
+        const price = document.createElement("p");
+        price.className = "text-sm text-gray-500 mt-1";
+        price.textContent = `${money(item.price)} × ${item.qty}`;
+
+        details.append(name, price);
+
+        const controls = document.createElement("div");
+        controls.className = "flex items-center gap-3";
+
+        const minus = document.createElement("button");
+        minus.className = "qty-btn";
+        minus.textContent = "−";
+        minus.setAttribute("aria-label", `Remove one ${item.name}`);
+        minus.addEventListener("click", () => {
+          item.qty--;
+          if (item.qty === 0) {
+            cart.splice(cart.indexOf(item), 1);
+          }
+          renderCart();
+        });
+
+        const plus = document.createElement("button");
+        plus.className = "qty-btn";
+        plus.textContent = "+";
+        plus.setAttribute("aria-label", `Add one ${item.name}`);
+        plus.addEventListener("click", () => {
+          item.qty++;
+          renderCart();
+        });
+
+        controls.append(minus, plus);
+        row.append(details, controls);
+        cartList.appendChild(row);
+      });
+    }
+
+    document.querySelectorAll(".add-btn").forEach(button => {
+      button.addEventListener("click", () => {
+        const name = button.dataset.name;
+        const price = Number(button.dataset.price);
+        const existing = cart.find(item => item.name === name);
+
+        if (existing) {
+          existing.qty++;
+        } else {
+          cart.push({ name, price, qty: 1 });
+        }
+
+        renderCart();
+        cartMessage.textContent = name + " added to your bag!";
+
+        button.textContent = "Added ✓";
+        setTimeout(() => button.textContent = "Add +", 900);
+      });
+    });
+
+    document.getElementById("clear-cart").addEventListener("click", () => {
+      cart.length = 0;
+      renderCart();
+      cartMessage.textContent = "Your bag has been cleared.";
+    });
+
+    document.getElementById("checkout").addEventListener("click", () => {
+      cartMessage.textContent = cart.length
+        ? "Demo checkout: connect a backend to place real orders."
+        : "Add your favorite shoes to the bag first!";
+    });
+
+    renderCart();
+  </script>
+</body>
+</html>
